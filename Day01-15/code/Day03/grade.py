@@ -7,11 +7,12 @@
 60分以下，输出E
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-02-28
+Author: yifan
+Date: 2023-01-30
 """
 
-score = float(input('请输入成绩: '))
+score = float(input('Enter the grade:'))
+
 if score >= 90:
     grade = 'A'
 elif score >= 80:
@@ -22,4 +23,4 @@ elif score >= 60:
     grade = 'D'
 else:
     grade = 'E'
-print('对应的等级是:', grade)
+print(f'(%.2f 分数对应的等级是 %s)' % (score, grade))

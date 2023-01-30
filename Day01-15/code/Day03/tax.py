@@ -1,10 +1,8 @@
 """
 输入月收入和五险一金计算个人所得税
-说明：写这段代码时新的个人所得税计算方式还没有颁布
-
 Version: 0.1
-Author: 骆昊
-Date: 2018-02-28
+Author: yifan
+Date: 2023-01-30
 """
 
 salary = float(input('本月收入: '))
