@@ -3,10 +3,15 @@
 F = 1.8C + 32
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-02-27
+Author: yifan
+Date: 2023-01-29
 """
 
-f = float(input('请输入华氏温度: '))
-c = (f - 32) / 1.8
-print('%.1f华氏度 = %.1f摄氏度' % (f, c))
+#input
+celsius = float(input('Please input the Celsius:'))
+fahrenheit = 1.8 * celsius + 32
+
+print('%.1f Celsius equals %.1f Fahrenheit' % (celsius,fahrenheit))
+
+#格式化输出的另一种方式
+print(f'{celsius:.1f} Celsius = {fahrenheit:.1f} Fahrenheit')

@@ -75,5 +75,3 @@ PyCharm的菜单项中有一个非常有用的“Code”菜单，菜单中提供
 | `command + shift + -` / `command + shift + +` | 折叠/展开所有代码                      |
 | `F2`                                          | 快速定位到错误代码                     |
 | `command+ alt + F7`                           | 查看哪些地方用到了指定的函数、类、方法 |
-
-> **说明**：Windows系统下如果使用PyCharm的默认设置，可以将上面的`command`键换成`ctrl`键即可，唯一的例外是`ctrl + space`那个快捷键，因为它跟Windows系统切换输入法的快捷键是冲突的，所以在Windows系统下默认没有与之对应的快捷键。

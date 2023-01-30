@@ -2,20 +2,27 @@
 字符串常用操作
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-02-27
+Author: yifan
+Date: 2023-01-29
 """
 
+import unicodedata
+
+
 str1 = 'hello, world!'
-print('字符串的长度是:', len(str1))
-print('单词首字母大写: ', str1.title())
-print('字符串变大写: ', str1.upper())
+print('The length of the string is :', len(str1))
+print('Capitalize the first letter of the word:', str1.title())
+print('Uppercase the string: ', str1.upper())
 # str1 = str1.upper()
-print('字符串是不是大写: ', str1.isupper())
-print('字符串是不是以hello开头: ', str1.startswith('hello'))
-print('字符串是不是以hello结尾: ', str1.endswith('hello'))
-print('字符串是不是以感叹号开头: ', str1.startswith('!'))
-print('字符串是不是一感叹号结尾: ', str1.endswith('!'))
-str2 = '- \u9a86\u660a'
+print('Is the string uppercase or not: ', str1.isupper())
+print('Does the string start with hello: ', str1.startswith('hello'))
+print('Does the string end with hello: ', str1.endswith('hello'))
+print('Does the string start with an "!":', str1.startswith('!'))
+print('Does the string end with an "!":', str1.endswith('!'))
+
+print(unicodedata.name('一'))
+print(unicodedata.name('凡'))
+
+str2 = ',\u4E00\u51E1'
 str3 = str1.title() + ' ' + str2.lower()
 print(str3)
