@@ -1,20 +1,24 @@
 """
-输入一个正整数判断它是不是素数
+Enter a positive integer to determine if it is prime or not.：
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-01
+Author: yifan
+Date: 2023-01-31
 """
 from math import sqrt
 
-num = int(input('请输入一个正整数: '))
-end = int(sqrt(num))
-is_prime = True
-for x in range(2, end + 1):
-    if num % x == 0:
-        is_prime = False
-        break
-if is_prime and num != 1:
-    print('%d是素数' % num)
+# 这里有一个概念，
+# 如果这个数不是素数，就一定有一个比平方根还小的整数能被它整除。所以不需要检查所有的
+
+num = int(input('Enter a positive integer:'))
+
+if num == 1:
+    print('%d is prime' % num)
+# num > 1
 else:
-    print('%d不是素数' % num)
+    for i in range(2, int(sqrt(num)) + 1):
+        if num % i == 0:
+            print('%d is not prime' % num)
+            break
+    else:
+        print('%d is prime' % num)

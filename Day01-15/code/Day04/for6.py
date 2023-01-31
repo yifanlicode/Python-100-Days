@@ -20,11 +20,12 @@
 *********
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-01
+Author: yifan
+Date: 2023-01-31
 """
 
 row = int(input('请输入行数: '))
+
 for i in range(row):
     for _ in range(i + 1):
         print('*', end='')
